@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+m<!DOCTYPE html>
 <html>
 <head>
 
-<title>Friendship Message 🌸</title>
+<title>Friendship Day 🌸</title>
 
 <style>
 
@@ -12,74 +12,80 @@ min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-background:linear-gradient(135deg,#ffe4f0,#e8f7ff);
+background:linear-gradient(135deg,#ffe1ed,#e7f4ff);
 font-family:Arial,sans-serif;
 }
 
 .card{
-width:85%;
-max-width:420px;
+width:90%;
+max-width:600px;
 background:white;
-padding:30px;
-border-radius:25px;
+padding:40px 25px;
+border-radius:30px;
 text-align:center;
-box-shadow:0 8px 25px #aaa;
+box-shadow:0 10px 30px #aaa;
 }
 
 h1{
 color:#ff4d88;
+font-size:30px;
 }
 
 p{
-font-size:18px;
+font-size:19px;
 color:#444;
-line-height:1.6;
+line-height:1.7;
 }
 
 textarea{
 width:90%;
-height:90px;
+height:100px;
 border-radius:15px;
-padding:10px;
-font-size:16px;
+padding:12px;
+font-size:17px;
+resize:none;
 border:1px solid #ccc;
 }
 
 .btn{
-margin-top:15px;
-padding:12px 25px;
+margin-top:20px;
+padding:14px 35px;
 border:none;
-border-radius:25px;
+border-radius:30px;
 background:#ff4d88;
 color:white;
-font-size:16px;
+font-size:18px;
+}
+
+.small{
+color:#888;
+font-size:15px;
 }
 
 </style>
 
 </head>
 
-
 <body>
-
 
 <div class="card">
 
 <h1>Happy Friendship Day 🌸</h1>
 
-
 <p>
 
-Some people come into life and make the journey a little better ✨
+Kuch friendships ko kisi label ki zaroorat nahi hoti,
+wo apni jagah special hoti hain ✨
 
 <br><br>
 
-I wish you achieve everything you dream of,
-get lots of happiness and success in life 🌻
+I hope you achieve everything you dream of
+and life me bahut saari happiness & success mile 🌻
 
 <br><br>
 
-Keep believing in yourself and keep shining 😊
+Hamesha smile karte rehna,
+khud par believe rakhna aur aage badhte rehna 😊
 
 <br><br>
 
@@ -91,19 +97,25 @@ Stay blessed, my friend 💫
 <h3>Leave a reply 💌</h3>
 
 
-<textarea id="reply" placeholder="Write something..."></textarea>
+<textarea id="reply" placeholder="Write something here..."></textarea>
 
 
 <br>
 
 
 <button class="btn" onclick="sendReply()">
+
 Send Reply 💌
+
 </button>
 
 
-</div>
+<p class="small">
+A small friendship memory 🌸
+</p>
 
+
+</div>
 
 
 <script>
@@ -121,10 +133,10 @@ alert("Write something 😊");
 
 else{
 
-window.open(
-"https://www.instagram.com/khushi_.2118/",
-"_blank"
-);
+let text = encodeURIComponent(msg);
+
+window.location.href =
+"https://ig.me/m/khushi_.2118?text="+text;
 
 }
 
